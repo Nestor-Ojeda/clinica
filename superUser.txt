@@ -1,0 +1,7 @@
+
+(entorno) C:\ProyectoDjango\clinica>python manage.py createsuperuser
+Nombre de usuario (leave blank to use 'nfo'): clinica
+Dirección de email: nestorfabi678@gmail.com
+Password: autg2021
+Password (again): autg2021
+Superuser created successfully.
