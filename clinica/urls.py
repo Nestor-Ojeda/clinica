@@ -15,7 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.contrib.auth.decorators import login_required
+
+from apps.usuarios.views import Inicio, Login, logoutUsuario
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', login_required(Inicio.as_view()), name='index'),
+    path('accounts/login/', Login.as_view(), name="login"),
 ]
