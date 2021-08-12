@@ -26,4 +26,5 @@ urlpatterns = [
     path('logout/', login_required(logoutUsuario), name="logout"),
 
     path('domicilio/', include(('apps.domicilio.urls', 'domicilio'))),
+    path('modelsGeneral/', include(('apps.modelsGeneral.urls', 'modelsGeneral'))),
 ]

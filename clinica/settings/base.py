@@ -31,6 +31,7 @@ BASE_APPS = [
 LOCAL_APPS = [
     'apps.usuarios',
     'apps.domicilio',
+    'apps.modelsGeneral',
 ]
 #Aplicaciones de terceros
 THIRD_APPS = [

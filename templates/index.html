@@ -34,15 +34,15 @@
                     <li class="menu-item-has-children dropdown">
                         <a  href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fas fa-users "></i>Persona</a>
                         <ul class="sub-menu children dropdown-menu">
-                            <li><i class="menu-icon fas fa-file-signature"></i><a href="#">Registro de Persona</a></li>
-                            <li><i class="menu-icon fas fa-table"></i><a href="#">Listado de Personas</a></li>
+                            <li><i class="menu-icon fas fa-file-signature"></i><a href="{% url 'modelsGeneral:crear_persona' %}">Registro de Persona</a></li>
+                            <li><i class="menu-icon fas fa-table"></i><a href="{% url 'modelsGeneral:listar_persona' %}">Listado de Personas</a></li>
                         </ul>
                     </li>
                     <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fas fa-atlas"></i>Obra Social</a>
                         <ul class="sub-menu children dropdown-menu">
-                            <li><i class="menu-icon fa fa-atlas"></i><a href="#">Registro de Obra Social</a></li>
-                            <li><i class="menu-icon fa fa-atlas"></i><a href="#">Listado de obra Social</a></li>
+                            <li><i class="menu-icon fa fa-atlas"></i><a href="{% url 'modelsGeneral:crear_obra_social' %}">Registro de Obra Social</a></li>
+                            <li><i class="menu-icon fa fa-atlas"></i><a href="{% url 'modelsGeneral:listar_obra_social' %}">Listado de obra Social</a></li>
                         </ul>
                     </li>
 
@@ -51,9 +51,9 @@
                     <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fas fa-glass-martini-alt"></i>Pages</a>
                         <ul class="sub-menu children dropdown-menu">
-                            <li><i class="menu-icon fa fa-sign-in"></i><a href="#">Login</a></li>
-                            <li><i class="menu-icon fa fa-sign-in"></i><a href="#">Register</a></li>
-                            <li><i class="menu-icon fa fa-paper-plane"></i><a href="#">Forget Pass</a></li>
+                            <li><i class="menu-icon fa fa-sign-in"></i><a href="page-login.html">Login</a></li>
+                            <li><i class="menu-icon fa fa-sign-in"></i><a href="page-register.html">Register</a></li>
+                            <li><i class="menu-icon fa fa-paper-plane"></i><a href="pages-forget.html">Forget Pass</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -107,7 +107,7 @@
                   <div class="card bg-primary">
                     <div class="card-body">
                       <blockquote class="blockquote md-0 text-light text-center">
-                        <h1 class="text-light"> Bienvenido a Biblioteca NFO</h1>
+                        <h1 class="text-light">{{ user.username | upper}} Bienvenido a Biblioteca NFO</h1>
                         <footer class="blockquote-footer text-light">"Google puede darte 100.00 respuestas, el Bibliotecario puede darte la correcta."-Neil Gaiman</footer>
                       </blockquote>
 
